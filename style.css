@@ -1,0 +1,350 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a:hover {
+    color: var(--primary-color) !important;
+}
+ul {
+    margin: 0;
+    padding: 0
+}
+:root {
+    --primary-color:#00c604;
+    --secondary-color:#151b20;
+    --white-color:#fff;
+    --black-color:#0e1317;
+    
+    --text-primary:#00c604;
+    --text-secondary:#151b20;
+    --text-color:#cfd3d7;
+    --text-white:#fff;
+    --text-grey:#999;
+
+    --base-font:"Roboto", "sans-serif";
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--base-font);
+    font-size: 100%;
+    font-weight: 400;
+
+}
+
+::-webkit-scrollbar {
+    width: .425rem;
+}
+::-webkit-scrollbar-track {
+    background: var(--primary-color);
+}
+h1{
+    font-size: 4.375rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    font-family: var(--heading-font);
+    color: var(--text-white);
+    text-transform: capitalize;
+    
+}
+h2{
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+    font-family: var(--heading-font);
+    color: var(--text-white);
+    text-transform: capitalize;
+    
+}
+h4{
+    font-size: 1.125rem;
+    font-weight: 800;
+    margin-bottom: .5rem;
+    font-family: var(--heading-font);
+    color: var(--text-secondary);
+    text-transform: capitalize;
+}
+h5{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    font-family: var(--heading-font);
+    color: var(--text-primary);
+    text-transform: capitalize;
+    
+}
+p {
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: 1px;
+}
+.main-btn {
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    box-shadow: 0 2px 10px -1px rgba(0 ,0, 0 ,10%);
+    -webkit-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s;
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    color: var(--text-white);
+}
+.main-btn:hover {
+    background-color: transparent;
+    color: var(--text-primary);
+}
+.wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.text-content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* 2 Navbar Design */
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all .3s ease-out;
+}
+
+.navigation-wrap .navbar-brand img {
+    width: 13rem;
+}
+.navigation-wrap .nav-items {
+    padding: 10px;
+    transition:all 200ms linear;
+}
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+.nav-link {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--text-color);
+  letter-spacing: 1px;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--text-white);
+}
+.navigation-wrap .main-btn {
+    padding: 5px 23px;
+    box-shadow: none;
+    margin-left: 10px;
+}
+
+/* Change navbar styling scroll*/
+.navigation-wrap.scroll-on {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--black-color);
+    box-shadow: 0 2px 28px rgba(0, 0, 0,.09);
+    transition: all .15s ease-in-out 0s;
+}
+
+/* Top banner */
+.top-banner {
+    width: 100%;
+    height: 100%;
+    background: url("Foodies_Images_Text/images/bg/bg-1.jpg") no-repeat center;
+    background-size: cover;
+    padding: 14.875rem 0 5.375rem;
+}
+
+/*Counter Design*/
+.counter-section{
+    background-color:var(--black-color);
+    padding: 2.5rem 0;
+}
+.counter-section h2 {
+    color:var(--text-primary);
+}
+.counter-section p {
+    color: var(--text-white);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/* About Section */
+.about-section {
+    background-color: var(--secondary-color);
+}
+.about-section ul li {
+    font-size: 1rem;
+    color: var(--text-white);
+    line-height: 2rem;
+    position: relative;
+    margin-left: 30px;   
+}
+
+.about-section ul li::before {
+    position: absolute;
+    left: -2.1875em;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 900;
+    display: inline-block
+}
+
+/* Story Section*/
+.story-section {
+ width: 100%;
+ height: 28.125rem;
+ background: url("Foodies_Images_Text/images/bg/bg-2.jpg") no-repeat center;   
+ background-size: cover;
+ padding-top: 100px;
+ text-align: center;
+}
+
+/* Explore food section*/
+#explore-food {
+    background-color: var(--secondary-color);
+}
+#explore-food .card {
+    background-color:transparent;
+    border-radius:15px;
+    border: 2px dashed var(--text-primary);
+}
+#explore-food .card img {
+    border-radius: 15px 15.6px 0 0;
+    object-fit: cover;
+}  
+#explore-food .card span {
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 1.5rem;
+   padding-bottom: 1rem;
+   border-bottom: 1px solid var(--primary-color);
+}   
+#explore-food .card span del{
+    color: var(--text-grey);
+    margin-left: 8px;
+}
+
+/* Testimonial-section*/
+.testimonial-section {
+    background: url("Foodies_Images_Text/images/bg/bg-4.jpg") no-repeat center top;
+    background-size: cover;
+}
+.testimonial-section .carousel-item{
+    margin-top: 3rem;
+    padding: 15rem 3.125rem;
+    background-color: var(--black-color);
+    text-align: center; 
+}
+.testimonial-section .carousel-item img {
+    max-width: 5rem;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid var(--primary-color);
+}
+.testimonial-section .carousel-item .carousel-caption p{
+ font-size:21px;
+ line-height: 33px;
+ padding: 10px 11%;
+}
+.testimonial-section .carousel-indicators{
+    bottom: -3.9125rem;
+}
+.testimonial-section .carousel-indicators button{
+width: 15px;
+height: 15px;
+border-radius: 50%;
+background-color: var(--primary-color);
+margin-top: 10px;
+}
+
+/*Team section*/
+.team {
+    background-color: var(--secondary-color);
+}
+.team .card {
+    background-color: var(--black-color);
+    border-radius:10px;
+    border:4px solid var(--primary-color);
+    text-align: center;
+}
+.team .card img {
+  border-radius: 10px 10px 0 0;
+}
+.team h4 {
+    color: var(--text-primary);
+    text-transform: uppercase;
+}
+.team h6,
+.team p {
+    color: var(--text-white);
+} 
+.social-icon i {
+    font-size: 18px;
+    transition: .3s all ease;
+    margin: 5px;
+    background-color:var(--primary-color);
+    color: var(--text-white);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+}
+.social-icon i:hover{
+    background-color: var(--white-color);
+    color: var(--text-primary);
+}
+
+/*Book food*/
+.book-food {
+    width: 100%;
+    background: url(Foodies_Images_Text/images/bg/bg-3.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:0 72px;
+    padding: 70px 0;
+    overflow: hidden;
+}
+.book-food h2 {
+    color: var(--text-primary);
+}
+.download-app {
+    width: 100%;
+    background: url(Foodies_Images_Text/images/bg/bg-5.jpg) no-repeat center;
+    background-size: cover;
+}
+/*footer section*/
+.footer {
+    background: var(--black-color);
+}
+.footer .footer-link {
+    font-size: 1rem;
+    color: var(--text-white);
+    padding:0 30px;
+}
+.footer a{
+    font-size:1.5rem ;
+    color: var(--text-white);
+    padding: 0 0.4rem;                 
+}
+
